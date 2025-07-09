@@ -22,6 +22,12 @@ public class BusinessException extends RuntimeException{
         this.description = codeError.getDescription();
     }
 
+    public BusinessException(CodeError codeError, String description) {
+        super(codeError.getMessage());
+        this.code = codeError.getCode();
+        this.description = description;
+    }
+
     public int getCode() {
         return code;
     }

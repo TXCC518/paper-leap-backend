@@ -232,6 +232,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
      * @param request   请求头
      * @return
      */
+    @Override
     public User getCurrentUser(HttpServletRequest request) {
         Object attribute = request.getSession().getAttribute(UserConstant.USER_LOGIN_STATE);
         return (User) attribute;

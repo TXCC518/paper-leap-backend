@@ -25,4 +25,5 @@
         status,password,currentNum,
         createTime,updateTime,isDelete
     </sql>
+
 </mapper>
